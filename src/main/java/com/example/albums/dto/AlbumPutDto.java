@@ -9,7 +9,9 @@ import javax.validation.constraints.NotEmpty;
 @Data
 @Builder
 @AllArgsConstructor
-public class AlbumPostDto {
+public class AlbumPutDto {
+    private Long id;
+
     @NotEmpty(message = "The title field cannot be empty")
     private String title;
 
